@@ -1,0 +1,17 @@
+{
+	"name": "SQL script external",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL DATA SOURCE ContosoLake\nWITH (LOCATION = 'https://marutigen2storage776.blob.core.windows.net')\n\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n            BULK '/sheetalfs107/NYCTripSmall.parquet',\n            DATA_SOURCE = 'ContonsoLake',\n            FORMAT='PARQUET'\n    ) AS [result]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "DataExplorationDB",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

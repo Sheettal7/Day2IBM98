@@ -1,0 +1,16 @@
+{
+	"name": "AzureSqlDb2",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=sheetalsqlserver01.database.windows.net;initial catalog=sheetaldb01;user id=sheetal",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNZTkFQU0VANjk4NEQ2RjgtNzI0Mi00OUFBLThENTctQUM2MTgxRkI5MTdBXzA0OTVkMjg3LWY2MTUtNGRiMi05OWI4LTY1MzRkODYzYzZmZiINCn0="
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
